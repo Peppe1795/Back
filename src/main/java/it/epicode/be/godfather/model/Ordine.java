@@ -8,17 +8,16 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 
 @Getter
 @Setter
 @AllArgsConstructor
-@ToString
 @Slf4j
 public class Ordine {
 	private int numeroOrdine;
 	private int numeroCoperti;
+	private Tavolo tavolo;
 	private LocalDateTime oraDiAcquisizione;
 	private StatoOrdine StatoOrdine;
 	List<ElementiOrdine> listaElementi;
@@ -36,4 +35,5 @@ public class Ordine {
 		ctx.close();
 		return valoreCoperto.getMyvalue() * numeroCoperti;
 	}
+
 }

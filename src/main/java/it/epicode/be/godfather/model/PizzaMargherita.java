@@ -6,4 +6,9 @@ public class PizzaMargherita extends PizzaBase {
 		super("Pizza Margherita (tomato, cheese)", 4.99, 1104d);
 	}
 
+	@Override
+	public String toString() {
+		return "PizzaMargherita";
+	}
+
 }
