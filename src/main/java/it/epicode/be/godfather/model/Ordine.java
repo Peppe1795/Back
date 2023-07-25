@@ -20,7 +20,7 @@ public class Ordine {
 	private Tavolo tavolo;
 	private LocalDateTime oraDiAcquisizione;
 	private StatoOrdine StatoOrdine;
-	List<ElementiOrdine> listaElementi;
+	private List<ElementiOrdine> listaElementi;
 
 	public double calcoloImporto() {
 		double totaleElementi = listaElementi.stream().mapToDouble(e -> e.getMenuItem().getPrice()).sum();

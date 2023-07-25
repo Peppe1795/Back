@@ -43,8 +43,8 @@ public class GestoreOrdini implements CommandLineRunner {
 		System.out.println("Ora di acquisto: " + ordine1.getOraDiAcquisizione());
 		System.out.println("Stato dell'ordine: " + ordine1.getStatoOrdine());
 		System.out.println("Lista elementi dell'ordine: " + ordine1.getListaElementi());
-//		System.out.println("Costo coperto: " + ordine1.costoCoperto());
-//		System.out.println("Conto: " + ordine1.calcoloImporto());
+		System.out.println("Costo coperto: " + ordine1.costoCoperto());
+		System.out.println("Conto: " + ordine1.calcoloImporto());
 
 		System.out.println("============ ORDINE 2 ============");
 
