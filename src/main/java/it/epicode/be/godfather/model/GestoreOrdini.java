@@ -43,8 +43,8 @@ public class GestoreOrdini implements CommandLineRunner {
 		System.out.println("Ora di acquisto: " + ordine1.getOraDiAcquisizione());
 		System.out.println("Stato dell'ordine: " + ordine1.getStatoOrdine());
 		System.out.println("Lista elementi dell'ordine: " + ordine1.getListaElementi());
-		System.out.println("Costo coperto: " + ordine1.costoCoperto());
-		System.out.println("Conto: " + ordine1.calcoloImporto());
+		System.out.println("Costo coperto: " + ordine1.costoCoperto(ordine1.getNumeroCoperti()));
+		System.out.println("Conto: " + ordine1.calcoloImporto(ordine1.getNumeroCoperti()));
 
 		System.out.println("============ ORDINE 2 ============");
 
@@ -54,8 +54,10 @@ public class GestoreOrdini implements CommandLineRunner {
 		System.out.println("Stato tavolo " + tavolo.getStatoTAvolo());
 		System.out.println("Numero coperti: " + ordine2.getNumeroCoperti());
 		System.out.println("Ora di acquisto: " + ordine2.getOraDiAcquisizione());
-//		System.out.println("Stato dell'ordine: " + ordine2.getStatoOrdine());
-//		System.out.println("Lista elementi dell'ordine: " + ordine2.getListaElementi());
+		System.out.println("Stato dell'ordine: " + ordine2.getStatoOrdine());
+		System.out.println("Lista elementi dell'ordine: " + ordine2.getListaElementi());
+		System.out.println("Costo coperto: " + ordine2.costoCoperto(ordine2.getNumeroCoperti()));
+		System.out.println("Conto: " + ordine2.calcoloImporto(ordine2.getNumeroCoperti()));
 
 	}
 

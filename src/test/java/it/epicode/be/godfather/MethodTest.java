@@ -27,7 +27,7 @@ public class MethodTest {
 		Ordine ordine1 = new Ordine(1, 5, null, LocalDateTime.now(), StatoOrdine.INCORSO,
 				new ArrayList<>(Arrays.asList(elemento1)));
 		log.info("Test1");
-		double result = ordine1.calcoloImporto();
+		double result = ordine1.calcoloImporto(ordine1.getNumeroCoperti());
 		assertEquals(result, 8.78);
 	}
 
@@ -40,7 +40,7 @@ public class MethodTest {
 		Ordine ordine1 = new Ordine(1, 5, null, LocalDateTime.now(), StatoOrdine.INCORSO,
 				new ArrayList<>(Arrays.asList(elemento1)));
 		log.info("Test2");
-		double result = ordine1.costoCoperto();
+		double result = ordine1.costoCoperto(ordine1.getNumeroCoperti());
 		assertEquals(result, 12.50);
 	}
 }
