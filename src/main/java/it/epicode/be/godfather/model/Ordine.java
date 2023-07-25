@@ -26,7 +26,6 @@ public class Ordine {
 
 	public Ordine(int numeroOrdine, int numeroCoperti, Tavolo tavolo, LocalDateTime oraDiAcquisizione,
 			StatoOrdine statoOrdine, List<ElementiOrdine> listaElementi) {
-		super();
 		this.numeroOrdine = numeroOrdine;
 		this.numeroCoperti = numeroCoperti;
 		this.tavolo = tavolo;
